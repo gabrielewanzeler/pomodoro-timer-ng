@@ -52,7 +52,7 @@ export class AppComponent {
   stopTimer() {
     clearInterval(this.intervalId);
 
-    // Pare o alarme quando o cronômetro é interrompido
+    
     this.stopAlarm();
   }
 
@@ -87,8 +87,6 @@ export class AppComponent {
     }
   }
     //this.stopAlarm();
-
-  // Se o cronômetro foi interrompido manualmente, reinicie o contador
     
   }
 
