@@ -1,0 +1,49 @@
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="/">
+                <i class="icon"></i>
+                Pomodoro
+            </a>
+        </div>
+    </div>
+</header>
+
+
+
+<div class="timer-container">
+    <button (click)="decreaseMinutes()" class="btn btn-decrease"><i class="icon"></i></button>
+    <h1>{{ minutes }}:{{ seconds === 0 ? '00' : seconds }}</h1>
+    <button (click)="increaseMinutes()" class="btn btn-increase"><i class="icon"></i></button>
+
+    <audio id="alarmSound"></audio>
+
+    <button *ngIf="alarmActive" (click)="stopAlarmManually()" class="btn btn-stop-alarm">Stop Alarm</button>
+</div>
+
+    
+
+
+
+
+<div class="controls-container">
+    <button (click)="startTimer()" class="btn btn-start">Start Timer</button>
+    <button (click)="stopTimer()" class="btn btn-stop">Stop Timer</button>
+</div>
+
+<div class="restart-container">
+    <button (click)="restartTimer()">Restart</button>
+</div>
+
+<div class="pomodoro-technique">
+    <h2>Técnica Pomodoro:</h2>
+    <ul>
+        <li>Escolha uma Tarefa: Selecione uma tarefa que você deseja realizar.</li>
+        <li>Defina o Temporizador: Configure um cronômetro para 25 minutos (um "pomodoro"), durante os quais você se concentra exclusivamente na tarefa escolhida.</li>
+        <li>Trabalhe na Tarefa: Dedique-se completamente à tarefa até que o cronômetro toque.</li>
+        <li>Faça uma Pausa Curta: Após cada pomodoro, faça uma pausa curta de 5 minutos para relaxar e se afastar da tarefa.</li>
+        <li>Repetição: Repita o processo. Após quatro pomodoros, faça uma pausa mais longa de 15 a 30 minutos.</li>
+    </ul>
+</div>
+
+<router-outlet></router-outlet>

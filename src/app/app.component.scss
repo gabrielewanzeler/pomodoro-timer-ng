@@ -1,0 +1,162 @@
+$cor-primaria: #3498db;
+$cor-secundaria: #e74c3c;
+$cor-fundo: #e7ecee;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3dbdb;
+    color: #333;
+}
+
+.container {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 160px;
+}
+
+.header {
+padding: 10px;
+
+a {
+    color: #705656;
+    text-decoration: none;
+    display: flex;
+    font-size: 24px;
+    text-align: center;
+
+.icon {
+    margin-right: 10px;
+}
+}
+}
+
+.timer-container {
+    text-align: center;
+    margin: 20px 0;
+
+h1 {
+    font-size: 2em;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: #fff;
+    margin: 20px;
+}
+
+.btn-decrease, .btn-increase {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    background-color: #cf2f2f;
+    color: #fff;
+
+    i {
+    margin: 0;
+    }
+}
+
+.btn-increase {
+    background-color: #2ecc71;
+}
+
+.btn-stop-alarm {
+    margin-top: 20px; // Ajuste a margem conforme necessário
+    margin-left: 50px;
+    background-color: #e74c3c; // Cor de fundo para o botão de parar o alarme
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+}
+
+.controls-container {
+text-align: center;
+margin: 20px 0;
+
+.btn {
+padding: 10px 20px;
+font-size: 18px;
+cursor: pointer;
+border: none;
+border-radius: 4px;
+margin: 0 10px;
+}
+
+    .btn-start {
+    background-color: $cor-primaria;
+    color: #fff;
+    }
+
+    .btn-stop {
+        background-color: $cor-secundaria;
+        color: #fff;
+    }
+}
+
+.restart-container {
+    text-align: center;
+    margin: 20px 0;
+
+button {
+    padding: 8px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: $cor-fundo;
+    color: $cor-primaria;
+    border: 2px solid $cor-primaria;
+    position: relative;
+    margin-bottom: 60px;
+    }
+}
+
+.pomodoro-technique {
+    text-align: center;
+    margin-top: 20px;
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    li {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+}
+}
