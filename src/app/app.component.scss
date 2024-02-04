@@ -28,17 +28,13 @@ body {
 .header {
 padding: 10px;
 
-a {
-    color: #705656;
-    text-decoration: none;
-    display: flex;
-    font-size: 24px;
-    text-align: center;
-
-.icon {
-    margin-right: 10px;
-}
-}
+    a {
+        color: #705656;
+        text-decoration: none;
+        display: flex;
+        font-size: 24px;
+        text-align: center;
+    }
 }
 
 .timer-container {
@@ -94,25 +90,24 @@ h1 {
     border: none;
     border-radius: 4px;
 }
-
 }
 
 .controls-container {
-text-align: center;
-margin: 20px 0;
+    text-align: center;
+    margin: 20px 0;
 
-.btn {
-padding: 10px 20px;
-font-size: 18px;
-cursor: pointer;
-border: none;
-border-radius: 4px;
-margin: 0 10px;
-}
+    .btn {
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        margin: 0 10px;
+    }
 
     .btn-start {
-    background-color: $cor-primaria;
-    color: #fff;
+        background-color: $cor-primaria;
+        color: #fff;
     }
 
     .btn-stop {
